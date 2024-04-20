@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main{
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String [] args){
+    System.out.println();
+    }
+    public static void instruct(){
+    System.out.println("Welcome! I will try to guess the Star Rail character you have in mind by asking you yes or no questions");
+    }
+    public boolean query(){
+    System.out.println("Type in yes or no");
+    String userInput = input.nextLine().toLowerCase();
+    boolean result = query(input);
+
+    if(result.equals("yes")){
+        return true;
+    }
+    else{
+        return false;
+    }
+    }
+}
